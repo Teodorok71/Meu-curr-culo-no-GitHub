@@ -1,0 +1,283 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Currículo | Portfólio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #0f172a;
+            color: #f1f5f9;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #1e293b;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h2 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .inicio {
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 70px 20px;
+            background: linear-gradient(135deg, #1e293b, #0f172a);
+        }
+
+        .inicio h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .inicio h1 span {
+            color: #38bdf8;
+        }
+
+        .inicio p {
+            color: #cbd5e1;
+            max-width: 600px;
+            margin-bottom: 25px;
+        }
+
+        .botao {
+            background: #0284c7;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .botao:hover {
+            background: #0369a1;
+        }
+
+        section {
+            padding: 60px 8%;
+        }
+
+        section h2 {
+            color: #38bdf8;
+            margin-bottom: 25px;
+            font-size: 28px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #334155;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            color: #e2e8f0;
+        }
+
+        .card p {
+            color: #cbd5e1;
+        }
+
+        .habilidades {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+        }
+
+        .habilidade {
+            background: #1e293b;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            border: 1px solid #334155;
+            transition: 0.3s;
+        }
+
+        .habilidade:hover {
+            border-color: #38bdf8;
+            transform: translateY(-5px);
+        }
+
+        footer {
+            background: #1e293b;
+            text-align: center;
+            padding: 25px;
+            color: #94a3b8;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 8px;
+                font-size: 14px;
+            }
+
+            .inicio h1 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>Meu Portfólio</h2>
+
+        <nav>
+            <a href="#sobre">Sobre</a>
+            <a href="#formacao">Formação</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="inicio">
+            <h1>Olá, eu sou <span>João Vitor Teodoro</span></h1>
+
+            <p>
+                Estudante de tecnologia, apaixonado por aprender
+                e desenvolver soluções através da programação.
+            </p>
+
+            <a href="contato.html" class="botao">
+                Entre em contato
+            </a>
+        </div>
+
+        <section id="sobre">
+            <h2>Sobre mim</h2>
+
+            <div class="card">
+                <h3>Quem sou eu?</h3>
+
+                <p>
+    Meu nome é João Vitor Teodoro. Sou estudante de
+    Ciências da Computação na UNA, atualmente cursando
+    o 4º período.
+
+    Estou desenvolvendo meus conhecimentos na área
+    de tecnologia e programação, buscando aprender
+    novas ferramentas, desenvolver projetos e crescer
+    profissionalmente na área de desenvolvimento
+    de software.
+</p>
+            </div>
+        </section>
+
+        <section id="formacao">
+    <h2>Formação acadêmica</h2>
+
+    <div class="card">
+        <h3>Ciências da Computação</h3>
+
+        <p>
+            Curso: Ciências da Computação
+        </p>
+
+        <p>
+            Instituição: UNA
+        </p>
+
+        <p>
+            Situação: 4º período
+        </p>
+    </div>
+</section>
+
+        <section id="habilidades">
+            <h2>Minhas habilidades</h2>
+
+            <div class="habilidades">
+
+                <div class="habilidade">
+                    <h3>HTML</h3>
+                    <p>Estrutura de páginas web</p>
+                </div>
+
+                <div class="habilidade">
+                    <h3>CSS</h3>
+                    <p>Estilização de sites</p>
+                </div>
+
+                <div class="habilidade">
+                    <h3>Git</h3>
+                    <p>Controle de versão</p>
+                </div>
+
+                <div class="habilidade">
+                    <h3>GitHub</h3>
+                    <p>Hospedagem de projetos</p>
+                </div>
+
+                <div class="habilidade">
+                    <h3>JavaScript</h3>
+                    <p>Lógica de programação</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="objetivo">
+            <h2>Objetivo profissional</h2>
+
+            <div class="card">
+                <p>
+                    Meu objetivo é conquistar uma oportunidade
+                    na área de tecnologia, desenvolver minhas
+                    habilidades técnicas e adquirir experiência
+                    profissional.
+
+                    Busco evoluir constantemente como profissional,
+                    participando de projetos e aprendendo novas
+                    tecnologias.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 - Meu Currículo | Desenvolvido por SEU NOME</p>
+    </footer>
+
+</body>
+</html>
